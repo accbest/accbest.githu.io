@@ -6,9 +6,10 @@ Welcome to visit my blog!
 
 #### 1.Personal Info
 Name: liu wei(刘威-竹雨听闲)  
+## 竹山云逸润夜雨，听涛鸥飞偷日闲。  
 Gender: Male  
 City: Wuhan, China  
-Career: Software developer(Android&Linux&Web)  
+Career: hard/Software developer(PLC&Linux&python)  
 
 #### 2.My Links
 Blog: <http://www.accnew.com>  

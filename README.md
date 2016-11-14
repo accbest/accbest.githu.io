@@ -7,8 +7,14 @@ http://www.accnew.com, 支持PC与智能机访问。
 #### 2.模板使用
 修改_config.yml与_includes目录下相关文件进行配置。  
 评论代码推荐“多说”，统计代码推荐cnzz。  
-模板可任意使用，但请保留本站友情链接。  
+模板可任意使用，但请保留本站友情链接。 
 
+#### 3.指令备注
+  
+  git add --all
+  git commit -m "initial commit"
+  git push -u origin master
+  
 #### 3.联系作者
 QQ: 93888108  
 Github：https://github.com/panxw  
