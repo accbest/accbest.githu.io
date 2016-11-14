@@ -11,9 +11,10 @@ http://www.accnew.com, 支持PC与智能机访问。
 
 #### 3.指令备注
   
-  git add --all
-  git commit -m "initial commit"
-  git push -u origin master
+  git clone https://github.com/accbest/accbest.github.io.git  
+  git add --all  
+  git commit -m "initial commit"  
+  git push -u origin master  
   
 #### 3.联系作者
 QQ: 93888108  
