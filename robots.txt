@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.panxw.com/atom.xml
+Sitemap: http://www.accnew.com/atom.xml
