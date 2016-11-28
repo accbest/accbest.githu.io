@@ -13,235 +13,233 @@ tags: [思考]
 ## 0x02 头文件——list.h
 今天复习的是数据结构里面最基础的数据结构——单链表，用C语言实现，废话不多说，直接上代码。首先是头文件list.h，里面定义了单链表结构体和操作接口。
 
-{% highlight c %}
-/* list.h --简单列表类型的头文件 */
-#ifndef LIST_H_
+    /* list.h --简单列表类型的头文件 */
+    #ifndef LIST_H_
 
-#define LIST_H_
+    #define LIST_H_
 
-#include<stdbool.h>
+    #include<stdbool.h>
 
-#define TSIZE 45
+    #define TSIZE 45
 
-struct film
-{
-    char title[TSIZE];
-    int rating;
-};
+    struct film
+    {
+        char title[TSIZE];
+        int rating;
+    };
 
-typedef struct film Item;
+    typedef struct film Item;
 
-typedef struct node
-{
-    Item item;
-    struct node *next;
-}Node;
+    typedef struct node
+    {
+        Item item;
+        struct node *next;
+    }Node;
 
-typedef Node *List;
+    typedef Node *List;
 
-/* 函数原型 */
-/* 操作: 刜始化一个列表 */
-/* 操作前: plist 指向一个列表 */
-/* 操作后: 该列表被刜始化为穸列表 */
-void InitializeList (List *plist);
+    /* 函数原型 */
+    /* 操作: 刜始化一个列表 */
+    /* 操作前: plist 指向一个列表 */
+    /* 操作后: 该列表被刜始化为穸列表 */
+    void InitializeList (List *plist);
 
-/* 操作: 确定列表是否为穸列表 */
-/* 操作前: plist 指向一个巫刜始化癿列表 /*
-* 操作后: 如果该列表为穸则迒回 true; 否则迒回 false */
-bool ListIsEmpty (const List *plist);
+    /* 操作: 确定列表是否为穸列表 */
+    /* 操作前: plist 指向一个巫刜始化癿列表 /*
+    * 操作后: 如果该列表为穸则迒回 true; 否则迒回 false */
+    bool ListIsEmpty (const List *plist);
 
-/* 操作: 确定列表是否巫满 /*
-* 操作前: plist 指向一个巫刜始化癿列表 */
-/* 操作后: 如果该列表巫满则迒回 true; 否则迒回 false */
-bool ListisFull (const List *plist);
+    /* 操作: 确定列表是否巫满 /*
+    * 操作前: plist 指向一个巫刜始化癿列表 */
+    /* 操作后: 如果该列表巫满则迒回 true; 否则迒回 false */
+    bool ListisFull (const List *plist);
 
-/* 操作: 确定列表中列表个数 /*
-* 操作前: plist 指向一个巫刜始化癿列表 */
-/* 操作后: 迒回该列表中顷目癿个数 */
-unsigned int ListItemCount (const List *plist);
+    /* 操作: 确定列表中列表个数 /*
+    * 操作前: plist 指向一个巫刜始化癿列表 */
+    /* 操作后: 迒回该列表中顷目癿个数 */
+    unsigned int ListItemCount (const List *plist);
 
-/* 操作: 在列表尾部添加一个顷目 /*
-* 操作前: item 是要被增加刡列表癿顷目 */
-/* plist 指向一个巫刜始化癿列表 /*
-* 操作后: 如果可能癿诉,在列表尾部添加一个新顷目 */
-/* 凼数迒回 true; 否则凼数迒回 false */
-bool AddItem (Item item, List *plist);
+    /* 操作: 在列表尾部添加一个顷目 /*
+    * 操作前: item 是要被增加刡列表癿顷目 */
+    /* plist 指向一个巫刜始化癿列表 /*
+    * 操作后: 如果可能癿诉,在列表尾部添加一个新顷目 */
+    /* 凼数迒回 true; 否则凼数迒回 false */
+    bool AddItem (Item item, List *plist);
 
-/* 操作: 抂一个凼数作用亍列表癿每个顷目 /*
-* 操作前: plist 指向一个巫刜始化癿列表 */
-/* pfun 指向一个凼数, 该凼数掍叐 /*
-* 一个 Item 参数幵丏无迒回值 */
-/* 操作后: pfun 指向癿凼数被作用刡 */
-/* 列表中癿每个顷目一次 */
-void Traverse (const List *plist, void (* pfun) (Item item));
+    /* 操作: 抂一个凼数作用亍列表癿每个顷目 /*
+    * 操作前: plist 指向一个巫刜始化癿列表 */
+    /* pfun 指向一个凼数, 该凼数掍叐 /*
+    * 一个 Item 参数幵丏无迒回值 */
+    /* 操作后: pfun 指向癿凼数被作用刡 */
+    /* 列表中癿每个顷目一次 */
+    void Traverse (const List *plist, void (* pfun) (Item item));
 
-/* 操作: 释放巫分配癿内存 (如果有) */
-/* 操作前: plist 指向一个巫刜始化癿列表 /*
-* 操作后: 为该列表分配癿巫被释放 幵丏该列表被置为穸列表 */
-void EmptytheList (List *plist);
-#endif //
-{% endhighlight %}
+    /* 操作: 释放巫分配癿内存 (如果有) */
+    /* 操作前: plist 指向一个巫刜始化癿列表 /*
+    * 操作后: 为该列表分配癿巫被释放 幵丏该列表被置为穸列表 */
+    void EmptytheList (List *plist);
+    #endif //
+
 
 ## 0x03 函数原型的实现——list.c
 链表操作相关函数原型的实现放在list.c文件中
 
-{% highlight c %}
-/* list.c --支持列表操作的函数 */
-#include<stdio.h>
 
-#include<stdlib.h>
+    /* list.c --支持列表操作的函数 */
+    #include<stdio.h>
 
-#include "list.h"
+    #include<stdlib.h>
 
-static void CopyToNode(Item item, Node *pnode);
+    #include "list.h"
 
-void InitializeList(List *plist)
-{
-    *plist = NULL;
-}
+    static void CopyToNode(Item item, Node *pnode);
 
-bool ListIsEmpty(const List *plist)
-{
-    if(*plist == NULL)
+    void InitializeList(List *plist)
+    {
+        *plist = NULL;
+    }
+
+    bool ListIsEmpty(const List *plist)
+    {
+        if(*plist == NULL)
+            return true;
+        else
+            return false;
+    }
+
+    bool ListIsFull(const List *plist)
+    {
+        Node *pt;
+        bool full;
+
+        pt = (Node *)malloc(sizeof(Node));
+        if(pt == NULL)
+            full = true;
+        else
+            full = false;
+        free(pt);
+        return full;
+    }
+
+    unsigned int ListItemCount(const List *plist)
+    {
+        unsigned int count = 0;
+        Node *pnode = *plist;
+
+        while(pnode!=NULL)
+        {
+            ++count;
+            pnode = pnode->next;
+        }
+        return count;
+    }
+
+    bool AddItem(Item item, List *plist)
+    {
+        Node *pnew;
+        Node *scan = *plist;
+
+        pnew = (Node *)malloc(sizeof(Node));
+        if(pnew == NULL)
+            return false;
+        CopyToNode(item,pnew);
+        pnew->next = NULL;
+        if(scan ==NULL)
+            *plist = pnew;
+        else
+        {
+            while(scan->next!=NULL)
+                scan = scan->next;
+            scan->next = pnew;
+        }
         return true;
-    else
-        return false;
-}
-
-bool ListIsFull(const List *plist)
-{
-    Node *pt;
-    bool full;
-
-    pt = (Node *)malloc(sizeof(Node));
-    if(pt == NULL)
-        full = true;
-    else
-        full = false;
-    free(pt);
-    return full;
-}
-
-unsigned int ListItemCount(const List *plist)
-{
-    unsigned int count = 0;
-    Node *pnode = *plist;
-
-    while(pnode!=NULL)
-    {
-        ++count;
-        pnode = pnode->next;
     }
-    return count;
-}
 
-bool AddItem(Item item, List *plist)
-{
-    Node *pnew;
-    Node *scan = *plist;
-
-    pnew = (Node *)malloc(sizeof(Node));
-    if(pnew == NULL)
-        return false;
-    CopyToNode(item,pnew);
-    pnew->next = NULL;
-    if(scan ==NULL)
-        *plist = pnew;
-    else
+    void Traverse(const List *plist,void(* pfun)(Item item))
     {
-        while(scan->next!=NULL)
-            scan = scan->next;
-        scan->next = pnew;
+        Node *pnode = *plist;
+        while(pnode!=NULL)
+        {
+            (*pfun)(pnode->item);
+            pnode = pnode->next;
+        }
     }
-    return true;
-}
 
-void Traverse(const List *plist,void(* pfun)(Item item))
-{
-    Node *pnode = *plist;
-    while(pnode!=NULL)
+    void EmptytheList(List *plist)
     {
-        (*pfun)(pnode->item);
-        pnode = pnode->next;
+        Node *psave;
+        while(*plist!=NULL)
+        {
+            psave = (*plist)->next;
+            free(*plist);
+            *plist = psave;
+        }
     }
-}
 
-void EmptytheList(List *plist)
-{
-    Node *psave;
-    while(*plist!=NULL)
+    static void CopyToNode(Item item, Node *pnode)
     {
-        psave = (*plist)->next;
-        free(*plist);
-        *plist = psave;
+        pnode->item = item;
     }
-}
 
-static void CopyToNode(Item item, Node *pnode)
-{
-    pnode->item = item;
-}
-{% endhighlight %}
 
 ## 0x04 测试链表的驱动程序——test.c
 写一个简单的驱动程序来测试链表
 
-{% highlight c %}
-/* test.c --使用ADT风格的链表 */
-#include<stdio.h>
 
-#include<stdlib.h>
+    /* test.c --使用ADT风格的链表 */
+    #include<stdio.h>
 
-#include "list.c"
+    #include<stdlib.h>
 
-void showmovies(Item item);
+    #include "list.c"
 
-int main(void)
-{
-    List movies;
-    Item temp;
+    void showmovies(Item item);
 
-    InitializeList(&movies);
-    if(ListIsFull(&movies))
+    int main(void)
     {
-        fprintf(stderr, "No memory available！Bye!\n");
-        exit(1);
-    }
-    puts("Enter first movie title:");
-    while(gets(temp.title)!=NULL && temp.title[0]!='\0')
-    {
-        puts("Enter your rating<0-10>:");
-        scanf("%d", temp.rating);
-        while(getchar()!='\n')
-            continue;
-        if(AddItem(temp,&movies)==false)
-        {
-            fprintf(stderr,"Problem allocating memory\n");
-            break;
-        }
+        List movies;
+        Item temp;
+
+        InitializeList(&movies);
         if(ListIsFull(&movies))
         {
-            puts("The list is now full.");
-            break;
+            fprintf(stderr, "No memory available！Bye!\n");
+            exit(1);
         }
-        puts("Enter next movies title(empty line to stop)");
+        puts("Enter first movie title:");
+        while(gets(temp.title)!=NULL && temp.title[0]!='\0')
+        {
+            puts("Enter your rating<0-10>:");
+            scanf("%d", temp.rating);
+            while(getchar()!='\n')
+                continue;
+            if(AddItem(temp,&movies)==false)
+            {
+                fprintf(stderr,"Problem allocating memory\n");
+                break;
+            }
+            if(ListIsFull(&movies))
+            {
+                puts("The list is now full.");
+                break;
+            }
+            puts("Enter next movies title(empty line to stop)");
+        }
+        if(ListIsEmpty(&movies))
+            printf("No data entered");
+        else
+        {
+            printf("Here is the movie list:\n");
+            Traverse(&movies,showmovies);
+        }
+        printf("You entered %d movies\n",ListItemCount(&movies));
+
+        EmptytheList(&movies);
+        printf("Bye!\n");
+        return 0;
     }
-    if(ListIsEmpty(&movies))
-        printf("No data entered");
-    else
+
+    void showmovies(Item item)
     {
-        printf("Here is the movie list:\n");
-        Traverse(&movies,showmovies);
+        printf("Movie:%s Rating: %d\n", item.title, item.rating);
     }
-    printf("You entered %d movies\n",ListItemCount(&movies));
-
-    EmptytheList(&movies);
-    printf("Bye!\n");
-    return 0;
-}
-
-void showmovies(Item item)
-{
-    printf("Movie:%s Rating: %d\n", item.title, item.rating);
-}
-{% endhighlight %}

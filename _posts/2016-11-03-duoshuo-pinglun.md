@@ -16,7 +16,7 @@ tags: [git,web]
 
 代码有三处地方需要修改，代码中已经表示出来了，可以参照我的代码：  
 
-{% highlight html %}
+
     <!-- 多说评论框 start -->
         <div class="ds-thread"
       data-thread-key="请将此处替换成你站点的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
@@ -35,7 +35,7 @@ tags: [git,web]
         })();
         </script>
     <!-- 多说公共JS代码 end -->  
-{% endhighlight %}
+
 
 根据中文提示有三处修改：   
 1、data-thread-key 我改为`{{ site.url }}_{{ page.title }}`   

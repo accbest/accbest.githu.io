@@ -20,8 +20,9 @@ tags: [思考]
 * ……
 
 这是一个分割：  
-`git add --all`  
-`git commit -m ''`  
+	`~ $ git add --all`   
+	`~ $ git commit -m "initial commit"` 
+	`~ $ git push -u origin master `   
 
 
 感谢这个有云的时代！可以让我们通过一件件简单的工具打造属于每个程序员自己的站点，[像黑客一样写博客](http://kyle.xlau.org/posts/blogging-like-a-hacker.html)（原文：[Blogging Like a Hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)）。
