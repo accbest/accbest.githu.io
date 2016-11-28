@@ -4,6 +4,9 @@ title: "关于：About"
 ---
 Welcome to visit my blog!
 
+**睡美人**
+![](http://i.imgur.com/4GtxVCF.jpg)
+
 #### 1.Personal Info
 Name: liu wei(刘威-竹雨听闲)
 
