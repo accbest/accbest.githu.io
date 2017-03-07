@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: http://www.accnew.com/atom.xml
