@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      "Python-第三方库requests详解"
+subtitle:   "Python - third-party library requests are explained in detail"
+date:       2016-06-17 12:00:00
+author:     "Eric"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+    - python
+    - 大数据
+---
+
 ##  Python-第三方库requests详解 
 
 **Requests** 是用Python语言编写，基于**urllib**，采用 **Apache2 Licensed** 开源协议的 HTTP 库。它比 urllib 更加方便，可以节约我们大量的工作，完全满足 HTTP 测试需求。Requests 的哲学是以 PEP 20 的习语为中心开发的，所以它比 urllib 更加 Pythoner。更重要的一点是它支持 Python3 哦！
