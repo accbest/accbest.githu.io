@@ -20,16 +20,16 @@ tags:
 
 通过pip安装
 
-```bash
-pip install requests
+```bash  
+pip install requests  
 ```
 
 以代码形式安装
 
-```bash
-$ git clone git://github.com/kennethreitz/requests.git
-$ cd requests
-$ python setup.py install
+```bash  
+$ git clone git://github.com/kennethreitz/requests.git  
+$ cd requests  
+$ python setup.py install  
 ```
 
 再懒一点，通过IDE安装吧，如pycharm！
@@ -38,46 +38,46 @@ $ python setup.py install
 
 先来一个简单的例子吧！让你了解下其威力：
 
-```python
-import requests
+```python  
+import requests  
  
 r = requests.get(url='http://www.itwhy.org')    # 最基本的GET请求
 '''
-201-206都表示服务器成功处理了请求的状态代码，说明网页可以正常访问。
-200（成功）  服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。
-201（已创建）  请求成功且服务器已创建了新的资源。 
-202（已接受）  服务器已接受了请求，但尚未对其进行处理。 
-203（非授权信息）  服务器已成功处理了请求，但返回了可能来自另一来源的信息。 
-204（无内容）  服务器成功处理了请求，但未返回任何内容。 
-205（重置内容） 服务器成功处理了请求，但未返回任何内容。与 204 响应不同，此响应要求请求者重置文档视图（例如清除表单内容以输入新内容）。 
-206（部分内容）  服务器成功处理了部分 GET 请求。
-其他状态码可进一步查询。
+201-206都表示服务器成功处理了请求的状态代码，说明网页可以正常访问。  
+200（成功）  服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。  
+201（已创建）  请求成功且服务器已创建了新的资源。   
+202（已接受）  服务器已接受了请求，但尚未对其进行处理。   
+203（非授权信息）  服务器已成功处理了请求，但返回了可能来自另一来源的信息。   
+204（无内容）  服务器成功处理了请求，但未返回任何内容。   
+205（重置内容） 服务器成功处理了请求，但未返回任何内容。与 204 响应不同，此响应要求请求者重置文档视图（例如清除表单内容以输入新内容）。   
+206（部分内容）  服务器成功处理了部分 GET 请求。  
+其他状态码可进一步查询。  
 '''
-print(r.status_code)    # 获取返回状态码
-#  表现形式为http://dict.baidu.com/s?wd=python
+print(r.status_code)    # 获取返回状态码  
+#  表现形式为http://dict.baidu.com/s?wd=python  
 r = requests.get(url='http://dict.baidu.com/s', params={'wd':'python'})   #带参数的GET请求
 # 打印url
 print(r.url)
 # 打印源代码
 print(r.text)   #打印解码后的返回数据
-```
+```  
 
  很简单吧！不但GET方法简单，其他方法都是统一的接口样式哦！
 
-```python
-requests.get(‘https://github.com/timeline.json’) #GET请求
-requests.post(“http://httpbin.org/post”) #POST请求
-requests.put(“http://httpbin.org/put”) #PUT请求
-requests.delete(“http://httpbin.org/delete”) #DELETE请求
-requests.head(“http://httpbin.org/get”) #HEAD请求
-requests.options(“http://httpbin.org/get”) #OPTIONS请求
+```python  
+requests.get('https://github.com/timeline.json') #GET请求
+requests.post("http://httpbin.org/post") #POST请求
+requests.put("http://httpbin.org/put") #PUT请求
+requests.delete("http://httpbin.org/delete") #DELETE请求
+requests.head("http://httpbin.org/get") #HEAD请求
+requests.options("http://httpbin.org/get") #OPTIONS请求
 ```
 
 PS：以上的HTTP方法，对于WEB系统一般只支持 **GET** 和 **POST**，有一些还支持 HEAD 方法。
 
 带参数的请求实例：
 
-```python
+```python  
 import requests
 requests.get('http://www.dict.baidu.com/s', params={'wd': 'python'})    #GET参数实例
 requests.post('http://www.itwhy.org/wp-comments-post.php', data={'comment': '测试POST'})    #POST参数实例
