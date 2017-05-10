@@ -260,3 +260,36 @@ requests.exceptions.Timeout: HTTPConnectionPool(host='github.com', port=80): Req
 所有Requests显式抛出的异常都继承自 requests.exceptions.RequestException：ConnectionError、HTTPError、Timeout、TooManyRedirects。
 
 转自:[http://www.itwhy.org/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/Python/python-%E7%AC%AC%E4%B8%89%E6%96%B9-http-%E5%BA%93-requests-%E5%AD%A6%E4%B9%A0.html](http://www.itwhy.org/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/Python/python-%E7%AC%AC%E4%B8%89%E6%96%B9-http-%E5%BA%93-requests-%E5%AD%A6%E4%B9%A0.html)
+
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+1. Make my changes
+  1. Fix bug
+  2. Improve formatting
+    * Make the headings bigger
+2. Push my commits to GitHub
+3. Open a pull request
+  * Describe my changes
+  * Mention all the members of my team
+    * Ask for feedback
+
+Some basic Git commands are:
+```
+git add --all
+git commit -m 'initial commit'
+git push -u origin master
+```
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
