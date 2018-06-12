@@ -2,7 +2,7 @@
 layout:     post
 title:      "锡兰行记"
 subtitle:   "夏总旅行笔记"
-date:       2015-04-14 
+date:       2018-06-14 
 author:     "xia-da"
 header-img: "img/xilan-xingji.png"
 catalog: true
@@ -22,7 +22,7 @@ tags:
 
  **待完成**...
 
-![pic01](./img/xilan-01.png)
+![pic01](/img/xilan/xilan-01.png)
 
 ---
 
@@ -34,7 +34,7 @@ tags:
 
  **待完成**...
 
-![pic02](/img/xilan-02.png)
+![pic02](/img/xilan/xilan-02.png)
 
 ---
 
@@ -46,7 +46,7 @@ tags:
 
  **待完成**...
 
-![pic03](/img/xilan-03.png)
+![pic03](/img/xilan/xilan-03.png)
 
 ---
 
@@ -58,7 +58,7 @@ tags:
 
  **待完成**...
 
-![pic05](/img/xilan-05.png)
+![pic05](/img/xilan/xilan-05.png)
 
 ---
 
@@ -70,4 +70,4 @@ tags:
 
  **待完成**...
 
-![pic06](/img/xilan-06.png)
+![pic06](/img/xilan/xilan-06.png)

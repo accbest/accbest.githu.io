@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "「知乎」对中国用户而言，Pure Android 是否比 MIUI 或 Flyme 体验更好？"
+title:      "对中国用户而言，Pure Android 是否比 MIUI 或 Flyme 体验更好？"
 subtitle:   ""
 date:       2014-09-04 12:00:00
 author:     "Eric"
@@ -10,9 +10,6 @@ tags:
     - 交互设计
     - Android
 ---
-
-<!-- > 这篇文章转载自[我在知乎上的回答](http://www.zhihu.com/question/25104721/answer/30108886) -->
-
 
 <p>哎呀～不要站队嘛。其实这是一个很有意思的题目，让我们一点点来看
     <br>
