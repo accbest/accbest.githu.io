@@ -3,7 +3,7 @@ layout:     post
 title:      "「知乎」如何评价 2015 年 3 月 9 日 Apple 春季发布会？"
 subtitle:   "聊聊科技与新式奢侈品"
 date:       2015-03-10 12:00:00
-author:     "Hux"
+author:     "Eric"
 header-img: "img/post-bg-apple-event-2015.jpg"
 tags:
     - 知乎
@@ -13,7 +13,7 @@ tags:
     - Apple Watch
 ---
 
-> 这篇文章转载自[我在知乎上的回答](http://www.zhihu.com/question/28617408/answer/41626694)
+<!-- > 这篇文章转载自[我在知乎上的回答](http://www.zhihu.com/question/28617408/answer/41626694) -->
 
 
 <div>

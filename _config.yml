@@ -1,10 +1,10 @@
 # Site settings
-title: hokkyliu Blog
-SEOTitle: 刘威博客 | hokkyliu Blog
+title: Eric Liu Blog
+SEOTitle: 刘威博客 | Eric Liu Blog
 header-img: img/home-bg.jpg
 email: hokkyliu@gmail.com
-description: "电子与设计、剑与诗 | 刘威，Web & Mobile Lover，EE，CS | 这里是 @hokkyliu 的个人博客，与你一起发现更大的世界。"
-keyword: "刘威, hokkyliu刘威, hokkyliu, @hokkyliu, 刘威的博客, hokkyliu Blog, 博客, 个人网站, 互联网, 电子, 设计, 产品"
+description: "电子与设计、剑与诗 | 刘威，Web & Mobile Lover，Python，Linux | 这里是 @hokkyliu 的个人博客，与你一起发现更大的世界。"
+keyword: "刘威, hokkyliu刘威, hokkyliu, @hokkyliu, 刘威的博客, Eric Liu Blog, 博客, 个人网站, 互联网, 电子, 设计, 产品"
 url: "http://www.liuway.cn"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -51,7 +51,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+duoshuo_username: Ericblog
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -64,7 +64,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: liuway.cn
 
 
 

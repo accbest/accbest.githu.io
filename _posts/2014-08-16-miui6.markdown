@@ -2,7 +2,7 @@
 layout:     post
 title:      "「知乎」如何评价 MIUI 6？"
 date:       2014-08-16 12:00:00
-author:     "Hux"
+author:     "Eric"
 header-img: "img/post-bg-miui6.jpg"
 tags:
     - 知乎
@@ -10,7 +10,7 @@ tags:
     - Android
 ---
 
-> 这篇文章转载自[我在知乎上的回答](http://www.zhihu.com/question/24783844/answer/29286896)
+<!-- > 这篇文章转载自[我在知乎上的回答](http://www.zhihu.com/question/24783844/answer/29286896) -->
 
 
 <div>
