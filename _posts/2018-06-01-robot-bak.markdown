@@ -21,16 +21,16 @@ tags:
 
  **待完成**...
 
-![pic01](/img/robot/robot-01.JPG)
+![pic01](/img/robot/robot-01.png)
 
 ---
 
 
-![pic02](/img/robot/robot-02.JPG)
+![pic02](/img/robot/robot-02.png)
 
 ---
 
 
-![pic03](/img/robot/robot-03.JPG)
+![pic03](/img/robot/robot-03.png)
 
 
