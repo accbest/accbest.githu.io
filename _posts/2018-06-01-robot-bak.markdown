@@ -1,0 +1,36 @@
+---
+layout:     post
+title:      "工业机器人"
+subtitle:   "基于DCS与Linux"
+date:       2018-06-14 
+author:     "xia-da"
+header-img: "img/robot.jpg"
+catalog: true
+tags:
+    - 嵌入式
+    - linux
+---
+
+
+
+## 工业机器人 
+
+
+> 为某核工业研究所制作机器人，具备探伤、清障、排故功能.
+
+
+ **待完成**...
+
+![pic01](/img/robot/robot-01.jpg)
+
+---
+
+
+![pic02](/img/robot/robot-02.jpg)
+
+---
+
+
+![pic03](/img/robot/robot-03.jpg)
+
+
