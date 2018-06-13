@@ -1,8 +1,7 @@
 ---
 layout:     post
 title:      "锡兰行记"
-subtitle:   "Ceylon discipline - the tea township of the Buddha state 
-"
+subtitle:   "Ceylon discipline - the tea township of the Buddha state "
 date:       2018-06-14 
 author:     "xia-da"
 header-img: "img/xilan-xingji.png"
